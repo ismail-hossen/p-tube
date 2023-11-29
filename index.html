@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P-hero tube</title>
+  <!-- tailwind and daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .font-inter {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="font-inter">
+  <header class="px-14">
+    <div class="flex justify-between items-center py-10">
+      <div>
+        <img src="./images/Logo.png" alt="">
+      </div>
+      <div>
+        <button id="sort-by-views" class="btn btn-active font-medium text-xl">Sort by view</button>
+      </div>
+      <div>
+        <button class="btn btn-error text-white font-medium text-sm">Blog</button>
+      </div>
+    </div>
+    <hr>
+  </header>
+  <main>
+    <!-- category section -->
+    <section class="px-6 lg:px-14 lg:py-6">
+      <div id="category-btn" class="flex items-center justify-center gap-x-6">
+      </div>
+    </section>
+    <section class="px-14 py-6">
+      <div id="not-found" class="hidden flex-col items-center justify-center gap-10 mt-40">
+        <img src="./images/Icon.png" alt="">
+        <h2 class="font-bold text-4xl w-96 text-center">Oops!! Sorry, There is no content here</h2>
+      </div>
+      <div id="card-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+        <!-- all card here -->
+      </div>
+    </section>
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
